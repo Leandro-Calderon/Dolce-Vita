@@ -1,0 +1,133 @@
+.firstPage{
+    background-image: url("../../images/bgimage2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.heroOverlay{
+    height: 85vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.heroBanner{
+    height: 60%;
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.heroBannerImg{
+    background-image: url("../../images/logo.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    
+    height: 300px;
+    width: 300px;
+}
+
+.btnDiv{
+    margin-top: 5rem;
+  justify-content: center;
+}
+
+.btn{
+    
+    background-color: rgba(0, 0, 0, 0.5);
+    /* border: 1px solid #F1D7D8; */
+    transition: 0.45s ease;
+    padding: 1rem 2.5rem;
+    font-size: 1.4rem;
+    text-decoration: none;
+
+    color: white;
+    border: 1px solid white;
+
+    /* color: #F1D7D8; */
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: #F1D7D8;
+    color: #114127;
+}
+
+
+
+
+
+@media (max-width: 1023px){
+
+    .heroBannerImg{
+        height: 250px;
+        width: 250px;
+    }
+
+    .btnDiv{
+        margin-top: 6rem;
+      justify-content: center;
+    }
+    
+
+.btn{
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+}
+
+} 
+
+@media (max-width: 600px){
+
+    
+    .btn{
+        font-size: 1rem;
+    }
+
+    .btnDiv{
+        margin-top: 3rem;
+    }
+}
+
+
+@media (max-width: 380px){
+
+    .heroBannerImg{
+        width: 200px;
+        height: 200px;
+    }
+    
+    .btn{
+        padding: 1rem 1.7rem;
+        font-size: 1rem;
+    }
+
+    .btnDiv{
+        margin-top: 3rem;
+    }
+}
+
+
+
+@media only screen and (max-device-width: 950px) 
+                   and (max-device-height: 500px) 
+                   and (orientation: landscape) {
+
+
+        .heroBannerImg{
+            width: 200px;
+            height: 200px;
+        }
+
+        .btnDiv{
+            display: none;
+        }
+}
