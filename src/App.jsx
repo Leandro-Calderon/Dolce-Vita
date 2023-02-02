@@ -1,6 +1,8 @@
 import {Route,Routes} from 'react-router-dom'
 
+import "./styles/Reset.css"
 import "./App.css";
+
 import {
   Header,
   Main,
