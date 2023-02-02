@@ -1,3 +1,85 @@
+/* colors
+    #FFFFFF  white
+    #E4919C  violet
+    #D9D9D9  gray
+    #BAE1DD  sky blue
+    #FFA1C4  pink
+*/
+
+.header{
+    width: 100vw;
+    height: 10vh;
+    background-color: var(--primaryColor);
+    display: flex;
+}
+    .header_titleDiv{
+        width: 80%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        padding-left: 15%;
+    }
+    .header_title{
+        color: white;
+        font-size: calc(1.7em + 1vw);
+    }
+    .header_burguerBtn{
+        width: 20%;
+        height: 100%;
+        color: white;
+    }
+    .header_burguerBtn svg{
+        width: 100%;
+        height: 100%;
+    }
+
+.dropdownNav{
+    width: 1px;
+    height: 1px;
+
+    position: fixed;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #BAE1DD;
+    transition: 0.6s;
+}
+    .dropdownNav .dropdownNav_divContainer{
+        display: none;
+    }
+.dropdownNav__On{
+    width: 100%;
+    height: 90%;
+}
+    .dropdownNav__On .dropdownNav_divContainer{
+        display: block;
+        width: 95%;
+        height: 65%;
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
+.dropdownNav_link{
+    width: 60%;
+    height: 8%;
+    color: white;
+    
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: calc(1.7em + 1vw);
+}
+
+
+
+
+
+/* Estilos que yo (Josue) no coloqué
+
 .firstPage{
     background-image: url("../../images/bgimage2.jpg");
     background-repeat: no-repeat;
@@ -43,7 +125,7 @@
 .btn{
     
     background-color: rgba(0, 0, 0, 0.5);
-    /* border: 1px solid #F1D7D8; */
+    /* border: 1px solid #F1D7D8; 
     transition: 0.45s ease;
     padding: 1rem 2.5rem;
     font-size: 1.4rem;
@@ -52,7 +134,7 @@
     color: white;
     border: 1px solid white;
 
-    /* color: #F1D7D8; */
+    /* color: #F1D7D8; 
 }
 
 .btn:hover{
@@ -131,3 +213,4 @@
             display: none;
         }
 }
+*/

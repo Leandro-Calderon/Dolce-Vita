@@ -12,8 +12,8 @@
 
 /* Aquí definimos las Custom properties */
 :root{
-    --color-primario         : #393939;
-    --color-secundario       : #f0f0f0;
+    --primaryColor      : #FFA1C4;
+    --secundaryColor     : #FFFFFF;
     
     /* Tipografía */
     --tipo-principal   : Helvetica, Arial, sans-serif;
@@ -23,8 +23,8 @@
   /* Las adaptamos al modo oscuro */
   @media (prefers-color-scheme: dark) {
     :root{
-        --color-primario         : #f0f0f0;
-        --color-secundario       : #393939;
+        --primaryColor      : #FFFFFF;
+        --secundaryColor     : #FFA1C4;
     }
   }
   
@@ -32,8 +32,8 @@
   /* Configuramos si un usuario ha activado el modo alto contraste. (WD) */
   /* @media (prefers-contrast: high){
       :root{
-        --color-primario         : black;
-        --color-secundario       :  white;
+        --primaryColor      : black;
+        --secundaryColor     :  white;
       }
   } */
   
@@ -105,8 +105,8 @@
   
   /* Configuramos el texto que seleccionamos */
   ::selection {
-    background-color: var(--color-primario);
-    color: var(--color-secundario);
+    background-color: var(--primaryColor);
+    color: var(--secundaryColor);
   }
   
   /* Nivelamos problemas de tipografías y colocación de formularios */
@@ -142,8 +142,8 @@
     min-height  : 100vh;
     font-size   : 100%;
     font-family : var(--tipo-principal);
-    color       : var(--color-primario);
-    background-color: var(--color-secundario);
+    color       : var(--primaryColor);
+    background-color: var(--secundaryColor);
     /* opcional */ line-height: 1.4em;
     /* opcional */ hyphens: auto;
     /* opcional */ font-smooth: always;
