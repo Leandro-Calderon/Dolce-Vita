@@ -1,15 +1,7 @@
-/* colors
-    #FFFFFF  white
-    #E4919C  violet
-    #D9D9D9  gray
-    #BAE1DD  sky blue
-    #FFA1C4  pink
-*/
-
 .header{
     width: 100vw;
     height: 10vh;
-    background-color: var(--primaryColor);
+    background-color: var(--colorPink);
     display: flex;
     position: fixed;
     top: 0;
@@ -23,7 +15,8 @@
     }
     .header_title{
         color: white;
-        font-size: calc(1.7em + 1vw);
+        font-size: var(--Xlarge);
+        font-family: var(--fontSecundary);
     }
     .header_burguerBtn{
         width: 20%;

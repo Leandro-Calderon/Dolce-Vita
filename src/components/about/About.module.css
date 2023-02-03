@@ -17,12 +17,12 @@
 .section_divContent{
     padding: 2vh 2vh;
     width: 100%;
-    color: #D9D9D9;
 }
     .divContent_h2{
-        font-size: calc(1.7em + 1vw);
+        font-size: var(--Xlarge);
         margin-bottom: 2vh;
-        color: #E4919C;
+        color: var(--colorViolet);
+        font-family: var(--fontSecundary);
     }
     .divContent_p{
 
