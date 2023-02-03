@@ -12,19 +12,31 @@
 
 /* Aquí definimos las Custom properties */
 :root{
-    --primaryColor      : #FFA1C4;
-    --secundaryColor     : #FFFFFF;
+    /* Colores */
+    --colorPink      : #FFA1C4;
+    --colorWhite     : #FFFFFF;
+    --colorViolet     : #E4919C;
+    --colorGray     : #D9D9D9;
+    --colorSkyBlue    : #BAE1DD;
     
+    /* Tamaños de fuente */
+    --Xsmall: ;
+    --small: ;
+    --medium: ;
+    --large: ;
+    --Xlarge: calc(2em + 1.5vw);
+    --XXlarge: ;
+
     /* Tipografía */
-    --tipo-principal   : Helvetica, Arial, sans-serif;
-    --tipo-secundaria  : Verdana;
+    --fontPrimary   : Helvetica, Arial, sans-serif;
+    --fontSecundary : 'Devonshire', Verdana, cursive;
   }
 
   /* Las adaptamos al modo oscuro */
   @media (prefers-color-scheme: dark) {
     :root{
-        --primaryColor      : #FFFFFF;
-        --secundaryColor     : #FFA1C4;
+        /* --colorPink      : #FFFFFF;
+        --colorWhite     : #FFA1C4; */
     }
   }
   
@@ -32,8 +44,8 @@
   /* Configuramos si un usuario ha activado el modo alto contraste. (WD) */
   /* @media (prefers-contrast: high){
       :root{
-        --primaryColor      : black;
-        --secundaryColor     :  white;
+        --colorPink      : black;
+        --colorWhite     :  white;
       }
   } */
   
@@ -105,8 +117,8 @@
   
   /* Configuramos el texto que seleccionamos */
   ::selection {
-    background-color: var(--primaryColor);
-    color: var(--secundaryColor);
+    background-color: var(--colorPink);
+    color: var(--colorWhite);
   }
   
   /* Nivelamos problemas de tipografías y colocación de formularios */
@@ -141,9 +153,9 @@
   body {
     min-height  : 100vh;
     font-size   : 100%;
-    font-family : var(--tipo-principal);
-    color       : var(--primaryColor);
-    background-color: var(--secundaryColor);
+    font-family : var(--fontPrimary);
+    color       : var(--colorGray);
+    background-color: var(--colorWhite);
     /* opcional */ line-height: 1.4em;
     /* opcional */ hyphens: auto;
     /* opcional */ font-smooth: always;

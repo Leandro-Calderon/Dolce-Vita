@@ -1,0 +1,40 @@
+/* colors
+    #FFFFFF  white
+    #E4919C  violet
+    #D9D9D9  gray
+    #BAE1DD  sky blue
+    #FFA1C4  pink
+*/
+
+.section{
+    width: 100%;
+}
+
+.section_principalImg{
+    padding: 0 2vh;
+}
+
+.section_divContent{
+    padding: 2vh 2vh;
+    width: 100%;
+}
+    .divContent_h2{
+        font-size: var(--Xlarge);
+        margin-bottom: 2vh;
+        color: var(--colorViolet);
+        font-family: var(--fontSecundary);
+    }
+    .divContent_p{
+
+    }
+    .divSubContent{
+        display: flex;
+        justify-content: space-between;
+    }
+        .divSubContent_p{
+            width: 55%;
+            margin: 1vh 0;
+        }
+        .divSubContent_img{
+            width: 40%;
+        }
