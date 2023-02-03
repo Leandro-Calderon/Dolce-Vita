@@ -11,6 +11,8 @@
     height: 10vh;
     background-color: var(--primaryColor);
     display: flex;
+    position: fixed;
+    top: 0;
 }
     .header_titleDiv{
         width: 80%;
@@ -34,11 +36,12 @@
     }
 
 .dropdownNav{
-    width: 1px;
-    height: 1px;
+    width: 0px;
+    height: 0px;
 
     position: fixed;
     right: 0;
+    top: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -72,6 +75,10 @@
     justify-content: space-around;
     align-items: center;
     font-size: calc(1.7em + 1vw);
+}
+
+.cackeDecoration{
+    margin-top: 7%;
 }
 
 

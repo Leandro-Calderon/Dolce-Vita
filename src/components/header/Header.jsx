@@ -15,7 +15,7 @@ const Header = () => {
     return(
         <>
             <header className={st.header}>
-                <div className={st.header_titleDiv}><p className={st.header_title}>Dulce Vita</p></div>
+                <div className={st.header_titleDiv}><p className={st.header_title}>Dolce Vita</p></div>
                 <div className={st.header_burguerBtn} onClick={handleBurguer}><BurguerMenu/></div>
             </header>
             <nav className={onBurguer == false? st.dropdownNav : st.dropdownNav+" "+st.dropdownNav__On}>
@@ -27,6 +27,7 @@ const Header = () => {
                     <div className={st.dropdownNav_link} onClick={closeBurguer}><NavLink to={"/About"}>About</NavLink></div>
                 </div>
             </nav>
+            <div className={st.cackeDecoration}><img src="./src/assets/cackeDecoration.png"/></div>
         </>
     )
 };
